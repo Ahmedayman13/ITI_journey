@@ -1,23 +1,100 @@
 * {
-    padding: 0; 
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  display: grid;
+  grid-template-columns: minmax(150px, 300px) 1fr;
 }
 
 aside {
-    background:linear-gradient(to bottom,#9F69B8,#4D8BCC);
-    height: 100vh;
-    
+  background: linear-gradient(to bottom, #9f69b8, #4d8bcc);
+  height: 100vh;
+  /* grid-column: 1/2; */
+  padding: 26px 40px;
 }
 
-main{
-    background-color: blueviolet;
+main {
+  background-color: blueviolet;
 }
-header{
-    background-color: green;
+header {
+  background-color: white;
+  grid-column: 2/3;
+  height: 145px;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+ul {
+  list-style: none;
+  margin-top: 40px;
+}
+li:not(:last-child) {
+  margin-bottom: 10px;
+}
+header {
+        display: flex;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .notifi,
+      .search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .notifi {
+        gap: 20px;
+      }
+      .search {
+        gap: 10px;
+      }
+      input {
+        width: 720px;
+        border-radius: 16px;
+        height: 25px;
+        border: none;
+        background-color: #dee6ec;
+        padding: 0px 8px;
+      }
+      .header-line1,.header-line2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: space-between;
+        width: 100%;
+      }
+      .usr-data {
+        display: flex;
+        gap: 20px;
+        width: 50%;
+      }
+      .buttons button {
+        width: 135px;
+        height: 35;
+        background-color: #318EC2;
+        color: white;
+        padding: 8px 0;
+        text-align: center;
+        border: none;
+        border-radius: 16px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .buttons button:not(:last-child){
+        margin-right: 32px;
+      }
+
+
