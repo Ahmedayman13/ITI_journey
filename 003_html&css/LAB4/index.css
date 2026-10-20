@@ -1,0 +1,23 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+}
+
+aside {
+    background:linear-gradient(to bottom,#9F69B8,#4D8BCC);
+    height: 100vh;
+    
+}
+
+main{
+    background-color: blueviolet;
+}
+header{
+    background-color: green;
+}
