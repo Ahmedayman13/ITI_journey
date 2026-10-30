@@ -61,15 +61,35 @@ public :
         res.img = img + g.img;
         return res;
     }
-    Complex& operator+(int x){
-        real +=1;
-        return *this;
-    }
+    Complex operator+(int x){
+    Complex res;
+    res.real = real + x;
+    res.img = img;
+    return res;
+}
 
     int operator==( Complex y ){
        return real==y.real;
     }
+int operator!=( Complex y ){
+       return real!=y.real;
+    }
 
+    Complex& operator++(){
+        real +=1;
+        return *this;
+    }
+    //postfix
+    Complex operator++(int){
+    Complex old = *this;
+    real += 1;
+    return old;
+}
+Complex& operator+=(Complex y){
+    real += y.real;
+    img += y.img;
+    return *this;
+}
 
 };
 Complex add(Complex x , Complex y){
@@ -79,9 +99,9 @@ res.setImg(x.getImg()+y.getImg());
 
 return res;
 };
-Complex operator+(int y , Complex lala){
-    lala.setReal(1+lala.getReal());
-    return lala;
+Complex operator+(int y , Complex x){
+    x.setReal(y+x.getReal());
+    return x;
 }
 
 int main()
@@ -98,6 +118,9 @@ int main()
     n4 = 1+ n4;
     n4.print();
     cout <<(n4==n4);
+    n4++;
+    n4.print();
+    ++n4;
 
     return 0;
 }
