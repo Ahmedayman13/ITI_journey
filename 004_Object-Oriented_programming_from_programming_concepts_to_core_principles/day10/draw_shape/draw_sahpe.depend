@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1793278096 source:/home/ahmed/Desktop/iti_9month/ITI_journey/004_programing_C++/day5/draw_sahpe/main.cpp
+	<iostream>
+	<graphics.h>
+
+1793535702 source:/home/ahmed/Desktop/iti_9month/ITI_journey/004_Object-Oriented_programming_from_programming_concepts_to_core_principles/day7/draw_shape/main.cpp
+	<iostream>
+	<graphics.h>
+
+1793535702 source:/home/ahmed/Desktop/iti_9month/zazaza/ITI_journey/004_Object-Oriented_programming_from_programming_concepts_to_core_principles/day7/draw_shape/main.cpp
+	<iostream>
+	<graphics.h>
+
