@@ -424,6 +424,9 @@ footer{
     text-align: center;
     gap: 20px;
 }
+.chatbot-container{
+    align-items: center;
+}
 
     .projects-container {
         grid-template-columns: 1fr;

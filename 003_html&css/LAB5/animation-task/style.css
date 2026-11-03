@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', system-ui;
+  background-color: #1a1a1a;
+  color: white;
+}
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+}
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.panel h2 {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    transition: letter-spacing 0.5s;
+}
+.panel:hover h2 {
+    letter-spacing: 10px;
+}
+.desert {
+    background-color: #d9a066;
+    background-image: url(./imgs/desert.jpg);
+}
+.forest {
+    background-color: #14342a;
+    background-image: url(./imgs/forest.jpg);
+}
+.canyon {
+    background-color: #b5651d;
+    background-image: url(./imgs/canyon.jpg);
+}
+.glacier {
+    background-color: #1d7a8c;
+    background-image: url(./imgs/glacier.jpg);
+}
+.desert h2 {
+    animation: bounce 1s ease-in-out infinite alternate;
+}
+.forest h2 {
+    animation: fade 2s ease-in-out infinite alternate;
+}
+.canyon h2 {
+    animation: spin 3s linear infinite;
+}
+.glacier h2 {
+    animation: grow 2s ease-in-out infinite alternate;
+}
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes grow {
+    from {
+        font-size: 10px;
+    }
+    to {
+        font-size: 45px;
+    }
+}
