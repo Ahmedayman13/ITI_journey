@@ -3,25 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ahmed Ayman</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <h2>Ahmed Ayman</h2>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Resume</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#resume">Resume</a></li>
         </ul>
       </nav>
       <div class="header-buttons">
@@ -35,7 +32,7 @@
         <img src="imgs/header_mobile_list.svg" alt="list" />
       </button>
     </header>
-    <main>
+    <main id="home">
       <div class="hero">
         <img src="imgs/logo.svg" alt="logo" />
         <div class="bio">
@@ -51,28 +48,186 @@
         <button>Contact Me</button>
       </div>
     </main>
-    <section class="about">
-        <div class="container">
-            <div class="know">
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="header-container">
         <h2>About Me</h2>
         <p>Get to know me</p>
       </div>
       <p>
-        Hi there! I'm [Your Name], a data scientist specializing in data
+        Hi there! I'm Ahmed Ayman, a data scientist specializing in data
         analytics, predictive modeling, natural language processing, machine
         learning, and AI chatbots. With a passion for unraveling insights from
         complex datasets, I'm dedicated to helping businesses make informed
-        decisions and stay ahead in today's data-driven world. I bring a blend
+        decisions and stay ahead in today's data-driven world.
+        </p>
+        <p>
+          I bring a blend
         of technical expertise, hands-on experience, and a commitment to clear
         communication to every project. Whether it's uncovering hidden patterns,
         predicting future trends, or automating processes with AI, I'm here to
-        help you harness the full potential of your data. Let's work together to
-        transform your data into actionable insights that drive real results.
+        help you harness the full potential of your data.
+        </p>
+        <p>
+        Let's work together to     transform your data into actionable insights that drive real results.
         Get in touch, and let's start unlocking the power of your data today!
-      </p>
-      <button>Download Resume</button>
+        </p>
+        
+      
+      <button id="resume">Download Resume</button>
         </div>
       
     </section>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="header-container">
+        <h2>What I do</h2>
+        <p>Services</p>
+      </div>
+      <div class="services-container">
+        <div class="service">
+          <img src="imgs/services/service.svg" alt="idea-icon">
+          <h3> Data Analytics & Visualization</h3>
+          <p>From data inception to actionable insights, I design compelling analytics and visualization solutions that illuminate trends, empower decision-making, and drive your business forward.</p>          
+        </div>
+        <div class="service">
+          <img src="imgs/services/service.svg" alt="idea-icon">
+          <h3>Predictive Analytics and Forecasting</h3>
+          <p>From data to foresight, I craft predictive analytics and forecasting solutions that steer your business with precision, empowering strategic decisions and ensuring future success</p>          
+        </div>
+        <div class="service">
+          <img src="imgs/services/service.svg" alt="idea-icon">
+          <h3>Natural Language Processing</h3>
+          <p>From text to insight, I craft Natural Language Processing solutions that decode language intricacies, revolutionizing data comprehension and empowering your business for success in the digital age</p>          
+        </div>
+       <div class="chatbot">
+        <div class="chatbot-container">
+          <img src="imgs/services/chatbot.svg" alt="ai-chatbot-icon">
+          <h3>AI Chatbots</h3>
+          <p>From design to deployment, I build AI Chatbots that enhance customer interactions, streamline processes, and elevate your brand's engagement, bringing innovative solutions to your audience's fingertips</p>  
+        </div>
+        <img src="imgs/services/ai-img.svg" alt="flow-of-data">
+                  
+        </div>
+        <div class="service">
+          <img src="imgs/services/machine-learning.svg" alt="machine-learning-icon">
+          <h3>Machine Learning</h3>
+          <p>From concept to automation, I craft Machine Learning solutions that decode patterns and optimize performance, driving your business into the era of intelligent automation</p>          
+        </div>
+      </div>
+      
+        </div>
+      
+    </section>
+    <section class="projects" id="projects">
+      <div class="container">
+            <div class="header-container">
+        <h2>Projects</h2>
+        <p>Some of my Work</p>
+      </div>
+      <div class="projects-buttons">
+        <button>Machine learning</button>
+        <button>Sql</button>
+        <button>Power Bi</button>
+        <button>AI/LLMs</button>
+        <button>Spatial Data Science</button>
+      </div>
+      <div class="projects-container">
+        <div class="project">
+          <img src="imgs/projects/Image.svg" alt="project-photo">
+          <h3>Project name/description</h3>
+          <div>
+            <p>Technology used</p>
+            <img src="imgs/projects/send.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="project">
+          <img src="imgs/projects/Image.svg" alt="project-photo">
+          <h3>Project name/description</h3>
+          <div>
+            <p>Technology used</p>
+            <img src="imgs/projects/send.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="project">
+          <img src="imgs/projects/Image (1).svg" alt="project-photo">
+          <h3>Project name/description</h3>
+          <div>
+            <p>Web design/Usability Testing</p>
+            <img src="imgs/projects/send.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="project">
+          <img src="imgs/projects/Image (2).svg" alt="project-photo">
+          <h3>Educational Platform</h3>
+          <div>
+            <p>Web design/Usability Testing</p>
+            <img src="imgs/projects/send.svg" alt="arrow">
+          </div>
+        </div>
+       <div class="project">
+          <img src="imgs/projects/Image (3).svg" alt="project-photo">
+          <h3>Educational Platform</h3>
+          <div>
+            <p>Web design/Usability Testing</p>
+            <img src="imgs/projects/send.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="project">
+          <img src="imgs/projects/Image (4).svg" alt="project-photo">
+          <h3>Educational Platform</h3>
+          <div>
+            <p>Web design/Usability Testing</p>
+            <img src="imgs/projects/send.svg" alt="arrow">
+          </div>
+        </div>
+      </div>
+      </div>
+      <button class="view">View All</button>
+    </section>
+    <section class="form">
+      <form action="#">
+      <div class="header-container">
+        <h2>Get in Touch</h2>
+        <p>Lets work together</p>
+      </div>
+      <div class="form-container">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <label for="service">Service</label>
+        <select id="service">
+          <option value="" disabled selected hidden>Select a service</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="10"></textarea>
+        <button type="submit">Get in Touch</button>
+      </div>
+      
+    </form>
+    </section>
+    <section class="work">
+      <div class="work-container">
+       <h2>Let's <br> Work Together - </h2>
+       <div class="gmail">
+        <img src="imgs/gmail.svg" alt="gmail-icon">
+        <h3>ah.tantawy138@gmail.com</h3>
+      </div>
+    </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <p class="copyright">© 2023 All rights reserved.
+        </p>
+        <div class="connect">
+          <a href="#"><img src="imgs/footer/IN.svg" alt="linkedIn-logo"></a>
+          <a href="#"><img src="imgs/footer/ball.svg" alt="ball"></a><a href="#"> <img src="imgs/footer/facebook.svg" alt="facebook-logo"></a><a href="#"><img src="imgs/footer/insta.svg" alt="insta-logo"></a><a href="#">          <img src="imgs/footer/X.svg" alt="X-logo">
+</a>
+        </div>
+      </div>
+    </footer>
+    
+    
   </body>
 </html>
