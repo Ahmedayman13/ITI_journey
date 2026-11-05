@@ -264,6 +264,14 @@ courses.forEach(elm=>elm.courseAvg = Math.round(elm.students.reduce((sum,st)=>su
 let avgHigherThan70 = courses.filter(elm=>elm.courseAvg>70)
 console.log(avgHigherThan70)
 ///////////////////////////////////////////
-let lowLvl = courses.filter(elm=>{
-    elm.students
-})
+let lowLvl = courses.flatMap(elm=>{
+    return elm.students.filter(st=>
+    {
+       return st.avgGrade<elm.courseAvg
+    }
+    )
+}).map(elm=>elm.name)
+console.log(lowLvl)
+//////////////////////////////////
+let sortedLowLvl = lowLvl.sort()
+console.log(sortedLowLvl)
