@@ -7,21 +7,108 @@
   </head>
   <body>
     <h1>Javascript Lab 1</h1>
-    <!--Scripts will be added here -->
-    <!-- <script src="index.js"></script> -->
-    <!-- <script>
-      console.log(number1);
-      console.log(number1);
-      console.log(number1);
-      // leh lama byde error bykml al scripts al ba2ya bs als cript zat nfso byo2f 3nd el error 
-      34an hwa by3tbr kol file 
-    </script> -->
-    <!--Here it outputs rerference error -->
-    <script src="external.js"></script>
+
+    <!-- experiment A, step 2: internal script BEFORE linking index.js -->
     <script>
-      console.log(number1);
-      console.log(number2);
-      console.log(number3);
+      console.log(number1) // ReferenceError: index.js is not loaded yet
+    </script>
+
+    <script src="index.js"></script>
+    <!-- <script src="external.js"></script> -->
+
+    <!-- experiment A, step 3: internal script AFTER linking index.js -->
+    <script>
+      console.log(number1) // 3
+      console.log(number2) // 2.9
+      console.log(number3) // 255
+    </script>
+
+    <!-- Part 4: type coercion -->
+    <script>
+      console.log(number1 + number2)            //  5.9
+      console.log(flag + number1)               //  (34an true htob2a 1 )
+      console.log(firstName + flag)             //  "ahmed za2ed true as string "
+      console.log(number1 + firstName)          //  concat 
+      console.log(number1 + number2 + firstName)// hyzwd numbers al awl b3deen yconcat
+      console.log(number1 + firstName + number2)// concating
+      console.log(number1 * flag)               // 3
+      console.log(number1 / lastName)           // NaN
+
+      //template literal
+      console.log(`Full Name: ${firstName} ${middleName} ${lastName}`)
+
+      //  table
+      const data = [
+        { id: 1, name: "Alice" },
+        { id: 2, name: "Bob" },
+      ]
+      console.table(data)
+    </script>
+
+    <script>
+      //  odd / even
+      var num = Number(prompt("Enter a number"))
+      if (num % 2 == 0) {
+        console.log(num + " is even")
+      } else {
+        console.log(num + " is odd")
+      }
+
+      //  loop 1 to 10
+      for (var i = 1; i <= 10; i++) {
+        console.log(i)
+      }
+
+      //  sign check
+      if (num > 0) {
+        console.log("positive")
+      } else if (num < 0) {
+        console.log("negative")
+      } else {
+        console.log("zero")
+      }
+
+      //  multiplication table
+      for (var j = 1; j <= 10; j++) {
+        console.log(num + " x " + j + " = " + num * j)
+      }
+
+      // 5.5 day of week (1 = Sunday)
+      var dayNum = Number(prompt("Enter a day number from 1 to 7"))
+      switch (dayNum) {
+        case 1: 
+        console.log("Sunday"); 
+        break
+        
+        case 2:
+           console.log("Monday"); 
+           break
+        case 3: 
+        console.log("Tuesday"); 
+        break
+        case 4: 
+        console.log("Wednesday"); 
+        break
+        case 5: 
+        console.log("Thursday"); 
+        break
+        case 6: 
+        console.log("Friday"); 
+        break
+        case 7: 
+        console.log("Saturday"); 
+        break
+        default: console.log("Invalid day number")
+      }
+
+      // weekend 
+      if (dayNum == 6 || dayNum == 7) {
+        console.log("Weekend")
+      } else if (dayNum >= 1 && dayNum <= 5) {
+        console.log("Weekday")
+      } else {
+        console.log("Invalid day number")
+      }
     </script>
   </body>
 </html>
