@@ -95,9 +95,7 @@ button {
     border-bottom: 1px solid #eeeeee;
     cursor: pointer;
 }
-.mail:hover {
-    background-color: #f2f6fc;
-}
+
 .mail h3 {
     font-size: 14px;
     font-weight: 700;
@@ -179,24 +177,3 @@ button {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .inbox-header {
-        padding: 0 15px;
-    }
-
-    .inbox-header p {
-        font-size: 12px;
-    }
-
-    .menu li {
-        padding: 8px;
-    }
-
-    .mail h3 {
-        font-size: 13px;
-    }
-
-    .subject {
-        font-size: 13px;
-    }
-}
